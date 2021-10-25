@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    grid-template-rows: 0.6fr 1.1fr 1.2fr 1.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Name Name Foto1"
+      "Enlaces Enlaces Foto1"
+      "Actividades Actividades Actividades"
+      "Estados Estados Estados";
+  }
+
+  body{
+      background-color: darkgrey;
+  }
+  
+  .Name { 
+      display: flex;
+      grid-area: Name; 
+      background-color: aqua;
+      justify-content: center;
+      margin: 10px;
+      border: 2px solid blue;
+    }
+  
+  .Foto1 { 
+      display: flex;
+      grid-area: Foto1; 
+      justify-content: center;
+      background-color: cadetblue;
+      margin: 10px;
+      border: 2px solid blue;
+     
+    }
+  
+  .Enlaces { 
+      display: flex;
+      grid-area: Enlaces;
+      background-color: cornflowerblue;
+      border: 2px solid blue;
+      margin: 10px;
+    }
+
+ 
+  
+  .Actividades { 
+      grid-area: Actividades; 
+      background-color: rgb(101, 240, 210); 
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      border: 2px solid blue;
+    }
+  
+  .Estados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . .";
+    grid-area: Estados;
+    margin: 10px;
+    border: 2px solid blue;
+    background-color: cornflowerblue
+  }
+
+  .nombre{
+      margin: 50px;
+  }
+  
+  .fotoed{
+      width: 250px;
+      height: 350px;
+      border-radius: 10px;
+      margin: 20px;
+
+  }
+
+  .contenla li{
+      font-size: 30px;
+      list-style: none;
+      padding: 10px 10px 10px 50px;
+      
+  }
+
+  .contenla a{
+      text-decoration: none;
+      color: rgb(6, 3, 53);
+  }
+
+  .contenla img{
+      width: 20px;
+      padding: 0px 5px 0px 0px;
+      
+  }
+
+
+  .tabla{
+    width: 100%;
+    border: 2px solid blue;
+  }
+
+  .tabla tr, th, td{
+    border: 2px solid blue;
+    text-align: center;
+  }
+
+
+  .Estados h2{
+    border: 2px solid blue;
+    border-radius: 100%;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(54, 166, 240);
+  }
+
+  .Estados img{
+    width: 30px;
+  }
