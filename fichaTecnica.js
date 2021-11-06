@@ -7,18 +7,18 @@ const datosEstudiantes = [{
         foto: "images/FOTO_EDUARDO_MARIN.jpeg",
         actividades: [{
             actividad: "actividad 1",
-            estadouiux: "5%",
-            estadotecnico: "2%"
+            estadouiux: "8%",
+            estadotecnico: "9%"
+        },
+        {
+            actividad: "actividad 1",
+            estadouiux: "6%",
+            estadotecnico: "7%"
         },
         {
             actividad: "actividad 1",
             estadouiux: "5%",
-            estadotecnico: "2%"
-        },
-        {
-            actividad: "actividad 1",
-            estadouiux: "5%",
-            estadotecnico: "2%"
+            estadotecnico: "4%"
         }
     ],
         valoraciones: {
@@ -37,18 +37,18 @@ const datosEstudiantes = [{
         foto: "images/VALEN.jpeg",
         actividades: [{
             actividad: "actividad 1",
-            estadouiux: "5%",
-            estadotecnico: "2%"
+            estadouiux: "8%",
+            estadotecnico: "7%"
         },
         {
             actividad: "actividad 1",
             estadouiux: "5%",
-            estadotecnico: "2%"
+            estadotecnico: "6%"
         },
         {
             actividad: "actividad 1",
-            estadouiux: "5%",
-            estadotecnico: "2%"
+            estadouiux: "8%",
+            estadotecnico: "10%"
         }
     ],
         valoraciones: {
@@ -87,20 +87,20 @@ function Plantilla(datos) {
             </tr>
             <tr>
                 <td><a href="">Actividad1</a></td>
-                <td>10%</td>
-                <td>5%</td>
+                <td>${datos.actividades[0].estadouiux}</td>
+                <td>${datos.actividades[0].estadotecnico}</td>
             </tr>
 
             <tr>
                 <td><a href="">Actividad2</a></td>
-                <td>10%</td>
-                <td>5%</td>
+                <td>${datos.actividades[1].estadouiux}</td>
+                <td>${datos.actividades[1].estadotecnico}</td>
             </tr>
 
             <tr>
                 <td><a href="">Actividad3</a></td>
-                <td>10%</td>
-                <td>5%</td>
+                <td>${datos.actividades[2].estadouiux}</td>
+                <td>${datos.actividades[2].estadotecnico}</td>
             </tr>
 
         </table>
@@ -115,16 +115,16 @@ function Plantilla(datos) {
         <div class="valorcss"><h2><a href= >CSS </a></h2> 
             <p>${datos.valoraciones.valcss}</p>
         </div>
-        <div class="valorjs"<h2><a href= >JS </a></h2>
+        <div class="valorjs"><h2><a href= >JS </a></h2>
             <p>${datos.valoraciones.valjs}</p>
         </div>
-        <div class="valorui"<h2><a href= >UI </a></h2>
+        <div class="valorui"><h2><a href= >UI </a></h2>
             <p>${datos.valoraciones.valui}</p>
         </div>
-        <div class="valorui"<h2><a href= >UX</a></h2>
+        <div class="valorui"><h2><a href= >UX</a></h2>
             <p>${datos.valoraciones.valux}</p>
         </div>
-        <div class="imgicon"<a href=""><img src="/images/user-solid.svg" alt=""></a>
+        <div class="imgicon"><a href=""><img src="/images/user-solid.svg" alt=""></a>
         </div>
     </div>
 `}
