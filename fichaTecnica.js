@@ -4,6 +4,7 @@ const datosEstudiantes = [{
         neocites: "https://neocities.org/site/edumarinar",
         email: "eduardo.marin.1990@hotmail.com",
         telefono: "3016071269",
+        foto: "images/FOTO_EDUARDO_MARIN.jpeg",
         actividades: [{
             actividad: "actividad 1",
             estadouiux: "5%",
@@ -29,10 +30,11 @@ const datosEstudiantes = [{
     }},
     {
         nombre: "Valentina Alzate Hincapié",
-        github: "https://github.com/mirepositorio",
-        neocites: "miportafolio.neocities.org",
-        email: "estudiante@dominio.com",
-        telefono: "3125678900",
+        github: "https://github.com/ValenAH",
+        neocites: "https://neocities.org/site/valenah",
+        email: "valenah52@gamil.com",
+        telefono: "3103775171",
+        foto: "images/VALEN.jpeg",
         actividades: [{
             actividad: "actividad 1",
             estadouiux: "5%",
@@ -63,13 +65,13 @@ function Plantilla(datos) {
     return `
     <div class="container">     
         <div class="Name"><h1 class="nombre">${datos.nombre}</h1></div>
-        <div class="Foto1"><img src="/images/FOTO_EDUARDO_MARIN.jpeg" alt="EDUARDO" class="fotoed"></div>
+        <div class="Foto1"><img src=${datos.foto} alt="" class="fotoed"></div>
         <div class="Enlaces">
             <ul class="contenla">
                 <li><img src="/images/github-brands.svg" alt=""><a href=${datos.github}>GitHub</a></li>
                 <li><img src="/images/network-wired-solid.svg" alt=""><a href=${datos.neocites}">Neocites</a></li>
-                <li><img src="/images/envelope-square-solid.svg" alt=""><a href=${datos.email}>Email</a></li>
-                <li><img src="/images/whatsapp-brands.svg" alt=""><a href=${datos.telefono}>Whatsapp</a></li>
+                <li><img src="/images/envelope-square-solid.svg" alt=""><a href="">${datos.email}</a></li>
+                <li><img src="/images/whatsapp-brands.svg" alt=""><a href="">${datos.telefono}</a></li>
             </ul>
         </div>
     </div>
@@ -107,12 +109,23 @@ function Plantilla(datos) {
 
 
     <div class="Estados">
-        <h2><a href= >Html<p>${datos.valoraciones.valhtml}</p></h2>
-        <h2><a href= >CSS<p>${datos.valoraciones.valcss}</p></h2>
-        <h2><a href= >JS<p>${datos.valoraciones.valjs}</p></a></h2>
-        <h2><a href= >UI<p>${datos.valoraciones.valui}</p></a></h2>
-        <h2><a href= >UX<p>${datos.valoraciones.valux}</p></a></h2>
-        <h2><a href=""><img src="/images/user-solid.svg" alt=""></a></h2>
+        <div class="valorhtml"><h2><a href= >Html </a></h2>
+            <p>${datos.valoraciones.valhtml}</p>
+        </div>
+        <div class="valorcss"><h2><a href= >CSS </a></h2> 
+            <p>${datos.valoraciones.valcss}</p>
+        </div>
+        <div class="valorjs"<h2><a href= >JS </a></h2>
+            <p>${datos.valoraciones.valjs}</p>
+        </div>
+        <div class="valorui"<h2><a href= >UI </a></h2>
+            <p>${datos.valoraciones.valui}</p>
+        </div>
+        <div class="valorui"<h2><a href= >UX</a></h2>
+            <p>${datos.valoraciones.valux}</p>
+        </div>
+        <div class="imgicon"<a href=""><img src="/images/user-solid.svg" alt=""></a>
+        </div>
     </div>
 `}
 

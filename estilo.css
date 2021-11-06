@@ -114,11 +114,11 @@
   }
 
 
-  .Estados h2{
+  .valorhtml, .valorcss, .valorjs, .valorui, .imgicon{
+    text-align: center;
     border: 2px solid blue;
     border-radius: 100%;
-    text-align: center;
-    width: 40%;
+    width: 30%;
     height: 40%;
     margin: 20px;
     padding: 20px;
